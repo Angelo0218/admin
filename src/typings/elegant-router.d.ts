@@ -20,6 +20,7 @@ declare module "@elegant-router/types" {
     "403": "/403";
     "404": "/404";
     "500": "/500";
+    "cloudwallet-login": "/cloudwallet-login";
     "home": "/home";
     "iframe-page": "/iframe-page/:url";
     "login": "/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?";
@@ -57,6 +58,7 @@ declare module "@elegant-router/types" {
     | "403"
     | "404"
     | "500"
+    | "cloudwallet-login"
     | "home"
     | "iframe-page"
     | "login"
@@ -79,6 +81,7 @@ declare module "@elegant-router/types" {
     | "403"
     | "404"
     | "500"
+    | "cloudwallet-login"
     | "iframe-page"
     | "login"
     | "home"

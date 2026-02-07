@@ -40,6 +40,17 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'cloudwallet-login',
+    path: '/cloudwallet-login',
+    component: 'layout.base$view.cloudwallet-login',
+    meta: {
+      title: 'cloudwallet-login',
+      i18nKey: 'cloudwallet-login',
+      constant: true,
+      hideInMenu: true
+    }
+  },
+  {
     name: 'home',
     path: '/home',
     component: 'layout.base$view.home',

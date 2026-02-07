@@ -28,7 +28,7 @@ export function createRouteGuard(router: Router) {
     const authStore = useAuthStore();
 
     const rootRoute: RouteKey = 'root';
-    const loginRoute: RouteKey = 'login';
+    const loginRoute: RouteKey = 'cloudwallet-login';
     const noAuthorizationRoute: RouteKey = '403';
 
     const isLogin = Boolean(localStg.get('token'));
@@ -106,7 +106,7 @@ async function initRoute(to: RouteLocationNormalized): Promise<RouteLocationRaw 
     }
 
     // if the user is not logged in, then switch to the login page
-    const loginRoute: RouteKey = 'login';
+    const loginRoute: RouteKey = 'cloudwallet-login';
     const query = getRouteQueryOfLoginRoute(to, routeStore.routeHome);
 
     const location: RouteLocationRaw = {
@@ -175,7 +175,7 @@ function handleRouteSwitch(to: RouteLocationNormalized, from: RouteLocationNorma
 }
 
 function getRouteQueryOfLoginRoute(to: RouteLocationNormalized, routeHome: RouteKey) {
-  const loginRoute: RouteKey = 'login';
+  const loginRoute: RouteKey = 'cloudwallet-login';
   const redirect = to.fullPath;
   const [redirectPath, redirectQuery] = redirect.split('?');
   const redirectName = getRouteName(redirectPath as RoutePath);

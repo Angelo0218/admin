@@ -586,6 +586,28 @@ declare namespace App {
           unFixed: string;
         };
       };
+      'cloudwallet-login'?: string;
+      cwLoginSystemTitle?: string;
+      cwLoginOrRegister?: string;
+      cwLoginModulePwd?: string;
+      cwLoginModuleCode?: string;
+      cwLoginModuleRegister?: string;
+      cwLoginModuleResetPwd?: string;
+      cwLoginModuleBindWechat?: string;
+      cwLoginUserNamePlaceholder?: string;
+      cwLoginPasswordPlaceholder?: string;
+      cwLoginPhonePlaceholder?: string;
+      cwLoginCodePlaceholder?: string;
+      cwLoginConfirmPasswordPlaceholder?: string;
+      cwLoginRememberMe?: string;
+      cwLoginForgetPassword?: string;
+      cwLoginConfirm?: string;
+      cwLoginBack?: string;
+      cwLoginValidateSuccess?: string;
+      cwLoginOtherAccountLogin?: string;
+      cwLoginSuperAdmin?: string;
+      cwLoginAdmin?: string;
+      cwLoginUser?: string;
     };
 
     type GetI18nKey<T extends Record<string, unknown>, K extends keyof T = keyof T> = K extends string

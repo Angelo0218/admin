@@ -56,17 +56,11 @@ export function useRouterPush(inSetup = true) {
   /**
    * Navigate to login page
    *
-   * @param loginModule The login module
+   * @param _loginModule Reserved parameter for compatibility
    * @param redirectUrl The redirect url, if not specified, it will be the current route fullPath
    */
-  async function toLogin(loginModule?: UnionKey.LoginModule, redirectUrl?: string) {
-    const module = loginModule || 'pwd-login';
-
-    const options: App.Global.RouterPushOptions = {
-      params: {
-        module
-      }
-    };
+  async function toLogin(_loginModule?: UnionKey.LoginModule, redirectUrl?: string) {
+    const options: App.Global.RouterPushOptions = {};
 
     const redirect = redirectUrl || route.value.fullPath;
 
@@ -74,7 +68,7 @@ export function useRouterPush(inSetup = true) {
       redirect
     };
 
-    return routerPushByKey('login', options);
+    return routerPushByKey('cloudwallet-login', options);
   }
 
   /**

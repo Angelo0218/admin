@@ -1,3 +1,5 @@
+import enUS from './en-us.json';
+
 const local: App.I18n.Schema = {
   system: {
     title: 'SoybeanAdmin',
@@ -228,6 +230,7 @@ const local: App.I18n.Schema = {
     403: 'No Permission',
     404: 'Page Not Found',
     500: 'Server Error',
+    'cloudwallet-login': 'CloudWallet Login',
     'iframe-page': 'Iframe',
     home: 'Home'
   },
@@ -366,4 +369,7 @@ const local: App.I18n.Schema = {
   }
 };
 
-export default local;
+export default {
+  ...local,
+  ...enUS
+};

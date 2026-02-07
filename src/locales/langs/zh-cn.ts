@@ -1,3 +1,5 @@
+import zhCN from './zh-cn.json';
+
 const local: App.I18n.Schema = {
   system: {
     title: 'Soybean 管理系统',
@@ -224,6 +226,7 @@ const local: App.I18n.Schema = {
     403: '无权限',
     404: '页面不存在',
     500: '服务器错误',
+    'cloudwallet-login': 'CloudWallet登录',
     'iframe-page': '外链页面',
     home: '首页'
   },
@@ -362,4 +365,7 @@ const local: App.I18n.Schema = {
   }
 };
 
-export default local;
+export default {
+  ...local,
+  ...zhCN
+};
