@@ -4,10 +4,10 @@ export const themeSettings: App.Theme.ThemeSetting = {
   grayscale: false,
   colourWeakness: false,
   recommendColor: false,
-  themeColor: '#646cff',
+  themeColor: '#2563eb',
   themeRadius: 6,
   otherColor: {
-    info: '#2080f0',
+    info: '#2563eb',
     success: '#52c41a',
     warning: '#faad14',
     error: '#f5222d'
@@ -93,4 +93,12 @@ export const themeSettings: App.Theme.ThemeSetting = {
  *
  * If publish new version, use `overrideThemeSettings` to override certain theme settings
  */
-export const overrideThemeSettings: Partial<App.Theme.ThemeSetting> = {};
+export const overrideThemeSettings: Partial<App.Theme.ThemeSetting> = {
+  themeColor: '#2563eb',
+  otherColor: {
+    info: '#2563eb',
+    success: '#52c41a',
+    warning: '#faad14',
+    error: '#f5222d'
+  }
+};
